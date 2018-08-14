@@ -3,7 +3,8 @@ Feature: Login Logout functionality
   Scenario: User is able to introduce his credentials
     When user navigates to Login page
     Then there are fields for user name and password on Login page
-@Run
+
+  @Run
   Scenario: User is logged on with valid password and user name
     Given user navigates to Login page
     When user logs in with 'Luke' username and 'Skywalker' password
