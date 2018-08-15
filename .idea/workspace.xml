@@ -66,10 +66,10 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#4369#4373#0" expanded="true" />
-                <element signature="e#33494#33498#0" expanded="true" />
-                <element signature="e#33780#33784#0" expanded="true" />
-                <element signature="e#34241#34245#0" expanded="true" />
+                <element signature="e#4678#4682#0" expanded="true" />
+                <element signature="e#34246#34250#0" expanded="true" />
+                <element signature="e#34532#34536#0" expanded="true" />
+                <element signature="e#34993#34997#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -491,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534337984256</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://github.com/ElenaCaitaz/herokuApp">
+      <created>1534338033139</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1534338033139</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -991,10 +998,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4369#4373#0" expanded="true" />
-            <element signature="e#33494#33498#0" expanded="true" />
-            <element signature="e#33780#33784#0" expanded="true" />
-            <element signature="e#34241#34245#0" expanded="true" />
+            <element signature="e#4678#4682#0" expanded="true" />
+            <element signature="e#34246#34250#0" expanded="true" />
+            <element signature="e#34532#34536#0" expanded="true" />
+            <element signature="e#34993#34997#0" expanded="true" />
           </folding>
         </state>
       </provider>
