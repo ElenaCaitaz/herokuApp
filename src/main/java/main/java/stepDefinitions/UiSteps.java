@@ -1,5 +1,7 @@
 package main.java.stepDefinitions;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -79,16 +81,12 @@ public class UiSteps {
         EmployeeDetails employeeDetails = detailsList.get(0);
 
         NewEmployeePage newEmployee = (NewEmployeePage) context.getPage(NewEmployeePage.class);
-        newEmployee.firstName().clear();
         newEmployee.firstName().sendKeys(employeeDetails.getFirstName());
-        newEmployee.lastName().clear();
         newEmployee.lastName().sendKeys(employeeDetails.getLastName());
-        newEmployee.startDate().clear();
         newEmployee.startDate().sendKeys(employeeDetails.getStartDate());
-        newEmployee.email().clear();
         newEmployee.email().sendKeys(employeeDetails.getEmail());
 
-        String firstName= employeeDetails.getFirstName();
+        String firstName = employeeDetails.getFirstName();
         String lastName = employeeDetails.getLastName();
         context.save(DataKeys.EMPLOYEE_FIRSTNAME, firstName);
         context.save(DataKeys.EMPLOYEE_LASTNAME, lastName);
@@ -106,7 +104,7 @@ public class UiSteps {
         List<WebElement> allEmployees = employeesPage.getEmployees();
         String employeeFirstName = (String) context.getData(DataKeys.EMPLOYEE_FIRSTNAME);
         String employeeLastName = (String) context.getData(DataKeys.EMPLOYEE_LASTNAME);
-        Optional<WebElement> name = allEmployees.stream().filter(r -> r.getText().equals(employeeFirstName +" "+employeeLastName)).findFirst();
+        Optional<WebElement> name = allEmployees.stream().filter(r -> r.getText().equals(employeeFirstName + " " + employeeLastName)).findFirst();
         Assert.assertTrue("Employee is created", name.isPresent());
         Utility.takeScreenshot(context.getDriver(), "Employee is displayed");
     }
@@ -128,6 +126,15 @@ public class UiSteps {
     public void userClicksOnUpdate() {
         EditEmployeePage editEmployee = (EditEmployeePage) context.getPage(EditEmployeePage.class);
         editEmployee.updateButton().click();
+    }
+
+    @When("^all input fields are cleared$")
+    public void allInputFieldsAreCleared() {
+        NewEmployeePage newEmployee = (NewEmployeePage) context.getPage(NewEmployeePage.class);
+        newEmployee.firstName().clear();
+        newEmployee.lastName().clear();
+        newEmployee.startDate().clear();
+        newEmployee.email().clear();
     }
 }
 

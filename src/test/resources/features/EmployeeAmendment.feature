@@ -8,12 +8,14 @@ Feature: Employee amendment functionality
     When user clicks on first employee
     Then employee details are dispalyed
 
+  @Run
   Scenario: User can edit employee details
     Given user navigates to Login page
     And user logs in with 'Luke' username and 'Skywalker' password
     And user is redirected to Employees page
     And user clicks on first employee
     And user clicks on Edit
+    And all input fields are cleared
     And user updates employee details with the following data
       | firstName     | lastName     | startDate  | email          |
       | ECFirstName)) | ECLastName)) | 2002-01-01 | test@email.com |
