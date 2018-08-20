@@ -26,7 +26,7 @@ Feature: Employee amendment functionality
     And user is redirected to Employees page
     And user clicks on first employee
     And user clicks on Edit
-    And user fills in employee details with the following data
+    And user updates employee details with the following data
       | firstName    | lastName    | startDate  | email          |
       | ECFirstName1 | ECLastName1 | 2002-01-01 | test@email.com |
     When user closes browser
@@ -38,7 +38,7 @@ Feature: Employee amendment functionality
     And user is redirected to Employees page
     And user clicks on first employee
     And user clicks on Edit
-    And user fills in employee details with the following data
+    And user updates employee details with the following data
       | firstName    | lastName    | startDate  | email          |
       | ECFirstName1 | ECLastName1 | 2002-01-01 | test@email.com |
     When user refreshes the page
@@ -50,7 +50,7 @@ Feature: Employee amendment functionality
     And user is redirected to Employees page
     And user clicks on first employee
     And user clicks on Edit
-    And user fills in employee details with the following data
+    And user updates employee details with the following data
       | firstName    | lastName    | startDate  | email          |
       | ECFirstName1 | ECLastName1 | 2002-01-01 | test@email.com |
     When user clicks on Back

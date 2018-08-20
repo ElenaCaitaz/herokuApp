@@ -41,11 +41,11 @@ public class ScenarioContext {
             return (PageObject) PageFactory.initElements(driver, page);
     }
 
-    public void save(DataKeys key, Object value){
+    public void save(DataKeys key, Object value) {
         data.put(key, value);
     }
 
-    public Object getData(DataKeys key){
+    public Object getData(DataKeys key) {
         return data.get(key);
     }
 }

@@ -29,7 +29,7 @@ Feature: Employee creation functionality
     And user logs in with 'Luke' username and 'Skywalker' password
     And user is redirected to Employees page
     And user clicks on Create
-    And user fills in employee details with the following data
+    And user fills-in employee details with the following data
       | firstName    | lastName    | startDate  | email          |
       | ECFirstName2 | ECLastName2 | 2007-08-01 | test@email.com |
     When user clicks on Cancel
@@ -41,7 +41,7 @@ Feature: Employee creation functionality
     And user logs in with 'Luke' username and 'Skywalker' password
     And user is redirected to Employees page
     And user clicks on Create
-    When user fills in employee details with the following data
+    When user fills-in employee details with the following data
       | firstName   | lastName   | startDate   | email   |
       | <firstname> | <lastname> | <startdate> | <email> |
     And user clicks on Add

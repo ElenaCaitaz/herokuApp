@@ -24,9 +24,10 @@ public class LoginPage extends PageObject {
         return new EmployeesPage();
     }
 
-    public WebElement errorMessage(){
+    public WebElement errorMessage() {
         return errorMessage;
     }
+
     public boolean onThePage() {
         return super.onThePage(userName);
     }

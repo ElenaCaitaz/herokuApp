@@ -3,7 +3,7 @@ package main.java.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class NewEmployeePage extends PageObject  {
+public class NewEmployeePage extends PageObject {
 
     @FindBy(xpath = "//fieldset/label[1]/input")
     private WebElement firstName;

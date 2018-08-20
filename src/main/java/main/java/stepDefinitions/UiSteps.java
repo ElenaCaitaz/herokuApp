@@ -26,7 +26,7 @@ public class UiSteps {
     public void userNavigatesToPage() {
         context.getDriver().get("http://cafetownsend-angular-rails.herokuapp.com");
         LoginPage loginPage = (LoginPage) context.getPage(LoginPage.class);
-        Assert.assertTrue("Login page fail to open", loginPage.onThePage());
+        Assert.assertTrue("Login page opened", loginPage.onThePage());
 
     }
 

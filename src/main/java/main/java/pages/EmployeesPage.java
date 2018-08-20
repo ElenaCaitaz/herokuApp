@@ -30,11 +30,12 @@ public class EmployeesPage extends PageObject {
     public WebElement editButton() {
         return edit;
     }
+
     public WebElement createButton() {
         return create;
     }
 
-    public List<WebElement> getEmployees(){
+    public List<WebElement> getEmployees() {
         return employees;
     }
 
